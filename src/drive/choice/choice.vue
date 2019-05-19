@@ -11,7 +11,7 @@
 </template>
 
 <script>
-    import Drive from '@/tool/classFactory/drive.js';
+    import Drive from '@/tool/classFactory/car.js';
     export default {
         name: "home",
         data () {
@@ -20,7 +20,7 @@
             }
         },
         created () {
-            this.getMember()
+            // this.getMember()
         },
         methods:{
             hrefFashion(){

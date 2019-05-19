@@ -6,6 +6,7 @@
 </template>
 
 <script>
+    import Drive from '@/tool/classFactory/car.js';
     export default {
         data(){
             return{

@@ -17,7 +17,7 @@ module.exports = {
       }
     },
     // http://39.108.250.148:8080/jkrj/
-    // http://jiayi.yf-gz.cn
+    // http://jiayi.yf-gz.fcn
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
     // host: 'jiayi.yf-gz.cn',

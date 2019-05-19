@@ -5,7 +5,7 @@
         <div class="userTitle">就是靠谱范西客</div>
         <div class="subtitle1">不用担心神一般的对手</div>
         <div class="subtitle2">只因有你这样靠谱的队友</div>
-        <img class="XC40" src="../../images/assets/btn/矢量智能对象4.png">
+        <img class="XC40" src="../../images/assets/btn/xc40.png">
         <div class="backBtn">
             <button @click="hrefChoice"class="choiceBtn">再测一次</button>
         </div>
@@ -17,6 +17,7 @@
 </template>
 
 <script>
+    import Drive from '@/tool/classFactory/car.js';
     export default {
         data(){
             return{
@@ -40,7 +41,7 @@
         flex-direction: column;
         align-items: center;
         height: auto;
-        background: black url("../../images/assets/choice/矢量智能对象3.png") no-repeat ;
+        background: black url("../../images/assets/choice/ccc.png") no-repeat ;
         background-size:  auto 100%;
         width: 100%;
     }

@@ -5,7 +5,7 @@
         <div class="userTitle">就是科技范西客</div>
         <div class="subtitle1">手机用新款，电脑要高配</div>
         <div class="subtitle2">你是执着于拥有酷炫装备的科技控</div>
-        <img class="XC40" src="../../images/assets/btn/矢量智能对象4.png">
+        <img class="XC40" src="../../images/assets/btn/xc40.png">
         <div class="backBtn">
             <button @click="hrefChoice" class="choiceBtn">再测一次</button>
         </div>
@@ -16,6 +16,7 @@
 </template>
 
 <script>
+    import Drive from '@/tool/classFactory/car.js';
     export default {
         data(){
             return{
@@ -39,7 +40,7 @@
         flex-direction: column;
         align-items: center;
         height: auto;
-        background: black url("../../images/assets/choice/矢量智能对象2.png") no-repeat ;
+        background: black url("../../images/assets/choice/tech.png") no-repeat ;
         background-size:  auto 100%;
         width: 100%;
     }

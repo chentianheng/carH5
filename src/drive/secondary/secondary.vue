@@ -30,6 +30,7 @@
 </template>
 
 <script>
+    import Drive from '@/tool/classFactory/car.js';
     export default {
         name: "secondary",
         data(){
