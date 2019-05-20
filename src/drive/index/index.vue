@@ -38,6 +38,7 @@
                 showPositionValue: false,
                 middle: 'middle',
                 msg:'信息不全',
+                time:3,
                 audio: {
                     currentTime: 0,
                     maxTime: 0,
@@ -83,11 +84,28 @@
                 this.userMsg.headImgUrl = localStorage.getItem('headImgUrl');
             }
             this.getMember()
+            this.timer()
         },
         activated () {
             console.log('activated')
         },
         methods:{
+            timer: function () {
+                if (this.time > 0) {
+                    this.time--;
+                    var m = '';
+                    var s = '';
+                    m = Math.floor(this.time/60%60);
+                    m < 10&&(m='0'+m);
+                    s = Math.floor(this.time%60);
+                    s < 10&&(s='0'+s);
+                    setTimeout(this.timer, 1000);
+                } else {
+                    this.time = 0;
+                    // this.showPositionValue = true
+                    this.share()
+                }
+            },
             share () {
                 console.log('share')
                 var that = this
@@ -152,7 +170,7 @@
                 Drive.prototype.getMember().then(res => {
                     let list = res.data.data || [];
                     // that.userMsg = list
-                    that.share()
+                    // that.share()
                     console.log(list)
                 });
             },
