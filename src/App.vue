@@ -74,6 +74,7 @@
             },
             //处理微信浏览器音乐自动播放问题
             audioAutoPlay() {
+                this.showPositionValue =  true
                 document.addEventListener('DOMContentLoaded', function () {
                     function audioAutoPlay() {
                         var musicEle0 = document.getElementById('music_mp3_0');

@@ -7,7 +7,7 @@
             <img @click="hrefChoice" class="imgFooter" src="../../images/assets/home/footer.png" alt="">
         </div>
     </div>
-
+    <toast v-model="showPositionValue" type="text" :time="800" is-show-mask :text="msg" :position="middle">{{msg}}</toast>
 </template>
 
 <script>
@@ -34,6 +34,9 @@
                 copyUrl: 'http://h5share.yf-gz.cn/h5/index.html#/index',
                 shareImg: 'https://zhaocha.yf-gz.cn/file/1558329389276_bf3be9dc56d3db5a0ed0d9d39fd00151.png',
                 userMsg:{},
+                showPositionValue: false,
+                middle: 'middle',
+                msg:'信息不全',
                 audio: {
                     currentTime: 0,
                     maxTime: 0,
