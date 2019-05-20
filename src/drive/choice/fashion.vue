@@ -39,7 +39,10 @@
             return{
                 username:'范西客',
                 code:'',
-                userMsg:{}
+                userMsg:{
+                    headImgUrl:'',
+                    nickName:''
+                }
             }
         },
         created () {
