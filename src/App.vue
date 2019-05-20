@@ -13,7 +13,7 @@
                    @pause="onPause"
                    @timeupdate="onTimeupdate"
                    @loadedmetadata="onLoadedmetadata"></audio>
-        </div>s
+        </div>
     </div>
 </template>
 
