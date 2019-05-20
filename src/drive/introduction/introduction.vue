@@ -117,6 +117,6 @@
     .btn2{
         width: 30%;
         position: absolute;
-        bottom: 4rem;
+        bottom: 3rem;
     }
 </style>
