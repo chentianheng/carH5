@@ -159,7 +159,7 @@
             getAccess_token(code){
                 const that = this;
                 Drive.prototype.updateUserInfo(code).then(res => {
-                    let list = res.data.data || [];
+                    let list = res.data.data || null;
                     console.log(list)
                     that.userMsg = list
                     if(list){
