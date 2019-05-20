@@ -75,6 +75,9 @@
             }
             this.getMember()
         },
+        activated () {
+            console.log('activated')
+        },
         methods:{
             share () {
                 console.log('share')
