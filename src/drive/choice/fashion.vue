@@ -48,6 +48,7 @@
                 this.code = option.code
                 this.getAccess_token(this.code)
             }
+            this.userMsg = localStorage.getItem('userMsg');
         },
         methods:{
             getMsgTap(){
@@ -62,6 +63,7 @@
                     let list = res.data.data || [];
                     console.log(list)
                     that.userMsg = list
+                    localStorage.setItem('userMsg',list);
 
                 });
             },
