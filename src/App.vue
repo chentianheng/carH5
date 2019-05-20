@@ -161,6 +161,7 @@
             // 语音元数据主要是语音的长度之类的数据
             onLoadedmetadata(res) {
                 console.log('onLoadedmetadata')
+                this.showPositionValue = true
                 const that = this
                 this.audio.waiting = false
                 this.audio.maxTime = parseInt(res.target.duration)
