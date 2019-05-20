@@ -52,8 +52,14 @@
                 this.getAccess_token(this.code)
             }
             console.log(localStorage.getItem('userMsg').nickName)
-            if(localStorage.getItem('userMsg'))
-            this.userMsg = localStorage.getItem('userMsg');
+            if(localStorage.getItem('nickName')){
+                this.userMsg.nickName = localStorage.getItem('nickName');
+            }
+            if(localStorage.getItem('headImgUrl')){
+                this.userMsg.headImgUrl = localStorage.getItem('headImgUrl');
+            }
+
+
         },
         methods:{
             getMsgTap(){
@@ -68,8 +74,8 @@
                     let list = res.data.data || [];
                     console.log(list)
                     that.userMsg = list
-                    localStorage.setItem('userMsg',list);
-
+                    localStorage.setItem('nickName',list.nickName);
+                    localStorage.setItem('headImgUrl',list.headImgUrl);
                 });
             },
             hrefChoice(){
