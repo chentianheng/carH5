@@ -30,8 +30,8 @@
                 console.log('share')
                 var that = this
                 this.option = {
-                    title: '嘉壹科技', // 分享标题, 请自行替换
-                    desc: '一站式互联网金融信息服务平台，免高额中介服务费，学习掌握贷款黑科技，最高200000极速下款，一键提交，最快10分钟下款！！！', // 分享描述, 请自行替换
+                    title: 'VOLVO FUN SEEKER ASSEMBLE', // 分享标题, 请自行替换
+                    desc: '选择一个你的标签，看看你是范西客哪一型？', // 分享描述, 请自行替换
                     link: that.copyUrl, // 分享链接，根据自身项目决定是否需要split
                     imgUrl: that.shareImg // 分享图标, 请自行替换，需要绝对路径
                 }
@@ -60,7 +60,7 @@
                     }
                 })
                 wx.updateTimelineShareData({
-                    title: '嘉壹科技:一站式互联网金融服务平台，免高额中介服务费，最高20万极速下款。', // 分享标题
+                    title: '选择一个你的标签，看看你是范西客哪一型？', // 分享标题
                     link: that.option.link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
                     imgUrl: that.option.imgUrl, // 分享图标
                     success () {

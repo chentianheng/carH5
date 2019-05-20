@@ -1,7 +1,9 @@
 <template>
     <div class="container" @click="getMsgTap">
-        <div class="headImg" ></div>
-        <div class="username">{{ username }}</div>
+        <div class="headImg" >
+            <img v-if="userMsg.headimgurl" class="XC40" :src="userMsg.headimgurl">
+        </div>
+        <div class="username" v-if="userMsg.nickname">{{ userMsg.nickname }}</div>
         <div class="userTitle">就是时尚范西客</div>
         <div class="subtitle1">讲究设计、质感、搭配</div>
         <div class="subtitle2">你就是行走在都市中的时髦精</div>
@@ -35,7 +37,8 @@
         data(){
             return{
                 username:'范西客',
-                code:''
+                code:'',
+                userMsg:{}
             }
         },
         created () {
@@ -66,6 +69,7 @@
                 Drive.prototype.updateUserInfo(code).then(res => {
                     let list = res.data.data || [];
                     console.log(list)
+                    that.userMsg = list
                 });
             },
             hrefChoice(){
