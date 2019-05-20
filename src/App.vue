@@ -1,8 +1,11 @@
 <template>
     <div id="app">
         <img style="position: absolute;height: 30px;width: auto;left: 10px;top: 10px;" src="./images/assets/btn/play.png"  @click="startPlayOrPause"/>
-        <router-view v-bind:style="{height : myHeight}">
-        </router-view>
+        <!--<router-view v-bind:style="{height : myHeight}">-->
+        <!--</router-view>-->
+        <keep-alive>
+            <router-view v-bind:style="{height : myHeight}"></router-view>
+        </keep-alive>
         <div>
             <audio ref="audio" class="dn"
                    :src="music" :preload="audio.preload"

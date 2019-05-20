@@ -145,7 +145,7 @@
                 const that = this;
                 Drive.prototype.getMember().then(res => {
                     let list = res.data.data || [];
-                    that.userMsg = list
+                    // that.userMsg = list
                     that.share()
                     console.log(list)
                 });
@@ -167,7 +167,7 @@
                 });
             },
             hrefChoice(){
-                console.log(localStorage.getItem('headImgUrl'))
+                console.log('hcj'+localStorage.getItem('headImgUrl'))
                 if(!localStorage.getItem('headImgUrl')){
                     this.getMsgTap()
                 }else {
