@@ -32,7 +32,8 @@
 
 <script>
     import Drive from '@/tool/classFactory/car.js';
-    import {Toast } from 'vux'
+    import {Toast } from 'vux';
+    import wx from 'weixin-js-sdk';
     export default {
         components: {
             Toast

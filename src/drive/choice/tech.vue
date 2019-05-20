@@ -23,6 +23,7 @@
 
 <script>
     import Drive from '@/tool/classFactory/car.js';
+    import wx from 'weixin-js-sdk'
     const getParams = function (url) {
         let params = {}
         if (url.includes('?')) {
