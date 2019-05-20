@@ -47,6 +47,7 @@
                     waiting: true,
                     preload: 'auto'
                 },
+                time:50,
                 controlList: {
                     // 不显示下载
                     noDownload: false,
@@ -64,6 +65,21 @@
             }
         },
         methods: {
+            timer: function () {
+                if (this.time > 0) {
+                    this.time--;
+                    var m = '';
+                    var s = '';
+                    m = Math.floor(this.time/60%60);
+                    m < 10&&(m='0'+m);
+                    s = Math.floor(this.time%60);
+                    s < 10&&(s='0'+s);
+                    setTimeout(this.timer, 1000);
+                } else {
+                    this.time = 0;
+                    return this.audio.playing ? this.pausePlay() : this.startPlay()
+                }
+            },
             wxConfig() {
                 Drive.prototype.jsTicket().then(res => {
                     let list = res.data.data || [];
@@ -171,7 +187,7 @@
             }
         },
         mounted() {
-            this.audioAutoPlay()
+            this.timer()
             this.wxConfig()
         }
         ,
