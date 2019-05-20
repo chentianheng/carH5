@@ -1,13 +1,14 @@
 <template>
     <div id="app">
-        <img style="position: absolute;height: 30px;width: auto;left: 10px;top: 10px;" src="./images/assets/btn/play.png"  @click="startPlayOrPause"/>
+        <img style="position: absolute;height: 30px;width: auto;left: 10px;top: 10px;"
+             src="./images/assets/btn/play.png" @click="startPlayOrPause"/>
         <!--<router-view v-bind:style="{height : myHeight}">-->
         <!--</router-view>-->
         <keep-alive>
             <router-view v-bind:style="{height : myHeight}"></router-view>
         </keep-alive>
         <div>
-            <audio ref="audio" class="dn"
+            <audio ref="audio" id="music_mp3_0" class="dn"
                    :src="music" :preload="audio.preload"
                    @play="onPlay"
                    @error="onError"
@@ -23,12 +24,13 @@
 <script>
     import wx from 'weixin-js-sdk'
     import Drive from '@/tool/classFactory/car.js';
+
     export default {
         name: 'app',
         data() {
             return {
                 myHeight: (window.innerHeight) + 'px',
-                music:'https://zhaocha.yf-gz.cn/file/1558359586024_7e903f1a0ab60a058a2f3157b9ac84c8.mp3',
+                music: 'https://zhaocha.yf-gz.cn/file/1558359586024_7e903f1a0ab60a058a2f3157b9ac84c8.mp3',
                 audio: {
                     currentTime: 0,
                     maxTime: 0,
@@ -54,8 +56,8 @@
                 },
             }
         },
-        methods:{
-            wxConfig () {
+        methods: {
+            wxConfig() {
                 Drive.prototype.jsTicket().then(res => {
                     let list = res.data.data || [];
                     var jsTicket = list
@@ -65,67 +67,86 @@
                         timestamp: jsTicket.timestamp, // 必填，生成签名的时间戳
                         nonceStr: jsTicket.nonceStr, // 必填，生成签名的随机串
                         signature: jsTicket.signature,// 必填，签名，见附录1
-                        jsApiList: ['hideOptionMenu', 'chooseWXPay','updateAppMessageShareData', 'updateTimelineShareData', 'onMenuShareTimeline', 'onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+                        jsApiList: ['hideOptionMenu', 'chooseWXPay', 'updateAppMessageShareData', 'updateTimelineShareData', 'onMenuShareTimeline', 'onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
                     });
                     // console.log(list)
                 });
             },
             //处理微信浏览器音乐自动播放问题
             audioAutoPlay() {
-                var audio = document.getElementById('audio');
-                audio.play();
-                document.addEventListener("WeixinJSBridgeReady", function () {
-                    audio.play();
-                }, false);
+                document.addEventListener('DOMContentLoaded', function () {
+                    function audioAutoPlay() {
+                        var musicEle0 = document.getElementById('music_mp3_0');
+                        musicEle0.play();
+                    }
+                    audioAutoPlay();
+                });
             },
-            onError () {
+            musicPlay(isPlay) {
+                if (isPlay && !this.audio.playing) {
+                    this.startPlay()
+                }
+                if (!isPlay && !this.audio.playing) {
+                    this.pausePlay()
+                }
+            },
+            onError() {
                 console.log('onError')
                 this.audio.waiting = true
-            },
+            }
+            ,
             startPlayOrPause() {
                 const that = this
                 return this.audio.playing ? this.pausePlay() : this.startPlay()
-            },
+            }
+            ,
             // 开始播放
             startPlay() {
                 this.$refs.audio.play()
-            },
+            }
+            ,
             // 暂停
             //haha
             pausePlay() {
                 this.$refs.audio.pause()
-            },
+            }
+            ,
             // 当音频暂停
-            onPause (e) {
+            onPause(e) {
                 this.audio.playing = false
-            },
+            }
+            ,
             // 当音频开始等待
-            onWaiting (res) {
-            },
-            onPlaying (res){
+            onWaiting(res) {
+            }
+            ,
+            onPlaying(res) {
 
-            },
+            }
+            ,
             // 当音频开始播放
-            onPlay (res) {
+            onPlay(res) {
                 console.log('onPlay')
                 this.audio.playing = true
                 this.audio.loading = false
-                if(!this.controlList.onlyOnePlaying){
+                if (!this.controlList.onlyOnePlaying) {
                     return
                 }
                 let target = res.target
                 let audios = document.getElementsByTagName('audio');
                 [...audios].forEach((item) => {
-                    if(item !== target){
+                    if (item !== target) {
                         item.pause()
                     }
                 })
-            },
+            }
+            ,
             // 当timeupdate事件大概每秒一次，用来更新音频流的当前播放时间
             onTimeupdate(res) {
                 this.audio.currentTime = res.target.currentTime
                 this.sliderTime = parseInt(this.audio.currentTime / this.audio.maxTime * 100)
-            },
+            }
+            ,
             // 当加载语音流元数据完成后，会触发该事件的回调函数
             // 语音元数据主要是语音的长度之类的数据
             onLoadedmetadata(res) {
@@ -133,15 +154,16 @@
                 const that = this
                 this.audio.waiting = false
                 this.audio.maxTime = parseInt(res.target.duration)
-                if(!this.audio.playing){
+                if (!this.audio.playing) {
                     this.startPlay()
                 }
             }
         },
-        mounted () {
-            this.wxConfig()
+        mounted() {
             this.audioAutoPlay()
-        },
+            this.wxConfig()
+        }
+        ,
     }
 </script>
 
