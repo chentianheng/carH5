@@ -6,8 +6,9 @@
             <img class="titleImg" src="../../images/assets/home/word.png" alt="titleImg"/>
             <img @click="hrefChoice" class="imgFooter" src="../../images/assets/home/footer.png" alt="">
         </div>
+        <toast v-model="showPositionValue" type="text" :time="800" is-show-mask :text="msg" :position="middle">{{msg}}</toast>
     </div>
-    <toast v-model="showPositionValue" type="text" :time="800" is-show-mask :text="msg" :position="middle">{{msg}}</toast>
+
 </template>
 
 <script>

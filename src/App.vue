@@ -18,19 +18,26 @@
                    @timeupdate="onTimeupdate"
                    @loadedmetadata="onLoadedmetadata"></audio>
         </div>
+        <toast v-model="showPositionValue" type="text" :time="800" is-show-mask :text="msg" :position="middle">{{msg}}</toast>
     </div>
 </template>
 
 <script>
     import wx from 'weixin-js-sdk'
     import Drive from '@/tool/classFactory/car.js';
-
+    import {Toast} from 'vux'
     export default {
         name: 'app',
+        components: {
+            Toast
+        },
         data() {
             return {
                 myHeight: (window.innerHeight) + 'px',
                 music: 'https://zhaocha.yf-gz.cn/file/1558359586024_7e903f1a0ab60a058a2f3157b9ac84c8.mp3',
+                showPositionValue: false,
+                middle: 'middle',
+                msg:'信息不全',
                 audio: {
                     currentTime: 0,
                     maxTime: 0,
@@ -74,7 +81,7 @@
             },
             //处理微信浏览器音乐自动播放问题
             audioAutoPlay() {
-                this.showPositionValue =  true
+                this.showPositionValue = true
                 document.addEventListener('DOMContentLoaded', function () {
                     function audioAutoPlay() {
                         var musicEle0 = document.getElementById('music_mp3_0');
