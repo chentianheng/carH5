@@ -20,13 +20,58 @@
 
 <script>
     import Drive from '@/tool/classFactory/car.js';
+    const getParams = function (url) {
+        let params = {}
+        if (url.includes('?')) {
+            let list = url.split('?')[1].split('&');
+            list.forEach(item => {
+                params[item.split('=')[0]] = decodeURIComponent(item.split('=')[1])
+            })
+        }
+        return params
+    }
     export default {
         data(){
             return{
-                username:'范西客'
+                username:'范西客',
+                code:'',
+                userMsg:{
+                    headImgUrl:'',
+                    nickName:''
+                }
+            }
+        },
+        created () {
+            var option = getParams(location.search);
+            if(option.code){
+                this.code = option.code
+                this.getAccess_token(this.code)
+            }
+            console.log(localStorage.getItem('userMsg').nickName)
+            if(localStorage.getItem('nickName')){
+                this.userMsg.nickName = localStorage.getItem('nickName');
+            }
+            if(localStorage.getItem('headImgUrl')){
+                this.userMsg.headImgUrl = localStorage.getItem('headImgUrl');
             }
         },
         methods:{
+            getMsgTap(){
+                var url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' + 'wx3450d66aef061ce2' + '&redirect_uri=' +
+                    encodeURIComponent('http://h5share.yf-gz.cn/h5/index.html#/fashion') + '&response_type=' +
+                    'code' + '&scope=' + 'snsapi_userinfo' + '&state=' + 123 + '#wechat_redirect'
+                window.location.href = url
+            },
+            getAccess_token(code){
+                const that = this;
+                Drive.prototype.updateUserInfo(code).then(res => {
+                    let list = res.data.data || [];
+                    console.log(list)
+                    that.userMsg = list
+                    localStorage.setItem('nickName',list.nickName);
+                    localStorage.setItem('headImgUrl',list.headImgUrl);
+                });
+            },
             hrefChoice(){
                 this.$router.push({ path:'/choice' })
             },

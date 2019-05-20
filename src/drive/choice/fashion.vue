@@ -58,8 +58,6 @@
             if(localStorage.getItem('headImgUrl')){
                 this.userMsg.headImgUrl = localStorage.getItem('headImgUrl');
             }
-
-
         },
         methods:{
             getMsgTap(){
@@ -112,6 +110,7 @@
         top: 6rem;
         left: 1.5rem;
         color: #FFFFFF;
+        margin-top: 6px;
     }
     .userTitle {
         font-size: 1.2rem;
