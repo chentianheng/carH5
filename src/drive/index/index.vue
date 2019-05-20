@@ -61,6 +61,8 @@
         },
         created () {
             var option = getParams(location.search);
+            console.log('hcj')
+            console.log(option)
             if(option.code){
                 this.code = option.code
                 this.getAccess_token(this.code)
