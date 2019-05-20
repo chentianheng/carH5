@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="270200d2-59d7-4930-a395-793fc1351d23" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" afterPath="$PROJECT_DIR$/src/App.vue" />
-      <change beforePath="$PROJECT_DIR$/src/drive/choice/choice.vue" afterPath="$PROJECT_DIR$/src/drive/choice/choice.vue" />
       <change beforePath="$PROJECT_DIR$/src/drive/choice/fashion.vue" afterPath="$PROJECT_DIR$/src/drive/choice/fashion.vue" />
       <change beforePath="$PROJECT_DIR$/src/drive/choice/reliable.vue" afterPath="$PROJECT_DIR$/src/drive/choice/reliable.vue" />
       <change beforePath="$PROJECT_DIR$/src/drive/choice/tech.vue" afterPath="$PROJECT_DIR$/src/drive/choice/tech.vue" />
-      <change beforePath="$PROJECT_DIR$/src/drive/index/index.vue" afterPath="$PROJECT_DIR$/src/drive/index/index.vue" />
-      <change beforePath="$PROJECT_DIR$/src/drive/introduction/introduction.vue" afterPath="$PROJECT_DIR$/src/drive/introduction/introduction.vue" />
-      <change beforePath="$PROJECT_DIR$/src/drive/primary/primary.vue" afterPath="$PROJECT_DIR$/src/drive/primary/primary.vue" />
-      <change beforePath="$PROJECT_DIR$/src/drive/secondary/secondary.vue" afterPath="$PROJECT_DIR$/src/drive/secondary/secondary.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -92,8 +86,8 @@
       <file leaf-file-name="fashion.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/drive/choice/fashion.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="14" />
+            <state relative-caret-position="240">
+              <caret line="17" column="68" lean-forward="false" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="68" />
               <folding>
                 <element signature="n#style#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="e#2615#5037#0" expanded="false" />
@@ -105,8 +99,8 @@
       <file leaf-file-name="reliable.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/drive/choice/reliable.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            <state relative-caret-position="203">
+              <caret line="17" column="68" lean-forward="false" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
               <folding>
                 <element signature="n#style#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="e#2563#4985#0" expanded="false" />
@@ -118,8 +112,8 @@
       <file leaf-file-name="tech.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/drive/choice/tech.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            <state relative-caret-position="240">
+              <caret line="17" column="68" lean-forward="false" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
               <folding>
                 <element signature="n#style#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="e#2600#5022#0" expanded="false" />
@@ -405,12 +399,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558278843730</updated>
-      <workItem from="1558278845662" duration="41985000" />
+      <workItem from="1558278845662" duration="42036000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41985000" />
+    <option name="totallyTimeSpent" value="42036000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -768,8 +762,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/drive/choice/fashion.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="14" />
+        <state relative-caret-position="240">
+          <caret line="17" column="68" lean-forward="false" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="68" />
           <folding>
             <element signature="n#style#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#2615#5037#0" expanded="false" />
@@ -779,8 +773,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/drive/choice/reliable.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        <state relative-caret-position="203">
+          <caret line="17" column="68" lean-forward="false" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
           <folding>
             <element signature="n#style#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#2563#4985#0" expanded="false" />
@@ -790,8 +784,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/drive/choice/tech.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        <state relative-caret-position="240">
+          <caret line="17" column="68" lean-forward="false" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
           <folding>
             <element signature="n#style#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#2600#5022#0" expanded="false" />

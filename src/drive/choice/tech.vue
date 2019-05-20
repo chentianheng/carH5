@@ -15,7 +15,7 @@
             <button @click="hrefChoice" class="choiceBtn">再测一次</button>
         </div>
         <div class="nextBtn">
-            <button @click="hrefIntroduction" class="choiceBtn">与沃同行</button>
+            <button @click="hrefIntroduction" class="choiceBtn">点击报名</button>
         </div>
         <div>
             <img class="qrcode" src="../../images/assets/home/qrcode.png">
