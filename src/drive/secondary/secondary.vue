@@ -5,15 +5,15 @@
         <p>报名参与活动，有机会免费获得精美礼品！</p>
         <div class="input">
             <label for="name">姓名：</label>
-            <input id="name" type="text" v-model="member.name">
+            <input id="name" type="text" v-model="member.name" style="font-size: 15px;">
         </div>
         <div class="input">
             <label for="tel">电话：</label>
-            <input id="tel" type="number" v-model="member.phone">
+            <input id="tel" type="number" v-model="member.phone" style="font-size: 15px;">
         </div>
         <div class="input">
             <label for="tel">省份：</label>
-            <input id="province" type="text" v-model="member.province">
+            <input id="province" type="text" v-model="member.province" style="font-size: 15px;">
         </div>
         <div class="input">
             <label for="tel">城市：</label>

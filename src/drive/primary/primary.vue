@@ -4,11 +4,11 @@
         <p>报名参与，有机会免费获得音乐派对门票！</p>
         <div class="input">
             <label for="name">姓名：</label>
-            <input id="name" type="text" v-model="member.name">
+            <input id="name" type="text" v-model="member.name" style="font-size: 15px;">
         </div>
         <div class="input">
             <label for="tel">电话：</label>
-            <input id="tel" type="number" v-model="member.phone">
+            <input id="tel" type="number" v-model="member.phone" style="font-size: 15px;">
         </div>
         <button @click="mainSubmit" class="submitBtn"></button>
         <p class="submitFooter">*活动详情敬请咨询沃尔沃当地授权经销商</p>
