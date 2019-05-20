@@ -52,6 +52,22 @@ export default class Car {
             err => Promise.reject(err)
         );
     }
+    updateUserInfo(code) {
+        return Axios({
+            url: `/api/wx/mp/updateUserInfo`,
+            method: 'post',
+            data: {
+                code:code
+            }
+        }).then(
+            res => {
+                res.data.data = res.data.data || [];
+                let list = res.data.data;
+                return Promise.resolve(res);
+            },
+            err => Promise.reject(err)
+        );
+    }
 
 }
 
