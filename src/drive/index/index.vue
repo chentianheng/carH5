@@ -8,10 +8,14 @@
 </template>
 
 <script>
+    import {Toast} from 'vux'
     import Drive from '@/tool/classFactory/car.js';
     import wx from 'weixin-js-sdk'
     export default {
         name: "home",
+        components: {
+            Toast
+        },
         data () {
             return {
                 copyUrl: 'https://jiayi.yf-gz.cn/?superiorId=" + customer.getId() + "#/my',
@@ -20,10 +24,10 @@
         },
         created () {
             this.getMember()
-            this.share()
         },
         methods:{
             share () {
+                console.log('share')
                 var that = this
                 this.option = {
                     title: '嘉壹科技', // 分享标题, 请自行替换
@@ -86,6 +90,7 @@
                 Drive.prototype.getMember().then(res => {
                     let list = res.data.data || [];
                     that.userMsg = list
+                    that.share()
                     console.log(list)
                 });
             },
