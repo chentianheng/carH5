@@ -1,22 +1,10 @@
 <template>
     <div>
         <div class="container">
-            <img class="mainImg" src="../../images/assets/btn/play.png"  @click="startPlayOrPause"/>
             <img class="mainImg" src="../../images/assets/home/main_06.png" alt="mainImg"/>
             <img class="logoImg" src="../../images/assets/home/logo_03.png" alt="logoImg"/>
             <img class="titleImg" src="../../images/assets/home/word.png" alt="titleImg"/>
             <img @click="hrefChoice" class="imgFooter" src="../../images/assets/home/footer.png" alt="">
-        </div>
-        <div>
-            <audio ref="audio" class="dn"
-                   :src="music" :preload="audio.preload"
-                   @play="onPlay"
-                   @error="onError"
-                   @waiting="onWaiting"
-                   @playing="onPlaying"
-                   @pause="onPause"
-                   @timeupdate="onTimeupdate"
-                   @loadedmetadata="onLoadedmetadata"></audio>
         </div>
     </div>
 
@@ -45,7 +33,7 @@
             return {
                 copyUrl: 'http://h5share.yf-gz.cn/h5/index.html#/index',
                 shareImg: 'https://zhaocha.yf-gz.cn/file/1558329389276_bf3be9dc56d3db5a0ed0d9d39fd00151.png',
-                music:'http://qiniu.jindou360.com/FgS86ODTt7EjQPAL82WVgBDmEu2I',
+                // music:'http://qiniu.jindou360.com/FgS86ODTt7EjQPAL82WVgBDmEu2I',
                 audio: {
                     currentTime: 0,
                     maxTime: 0,
@@ -171,6 +159,7 @@
                 });
             },
             hrefChoice(){
+                console.log(localStorage.getItem('headImgUrl'))
                 if(!localStorage.getItem('headImgUrl')){
                     this.getMsgTap()
                 }else {
@@ -245,7 +234,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: auto;
+        height: 100%;
         background: black url("../../images/assets/choice/background02.png") no-repeat ;
         background-size: 100%;
         width: 100%;
@@ -271,15 +260,4 @@
         width: 70%;
     }
 </style>
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+

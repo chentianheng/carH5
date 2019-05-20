@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="270200d2-59d7-4930-a395-793fc1351d23" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/drive/choice/fashion.vue" afterPath="$PROJECT_DIR$/src/drive/choice/fashion.vue" />
-      <change beforePath="$PROJECT_DIR$/src/drive/choice/reliable.vue" afterPath="$PROJECT_DIR$/src/drive/choice/reliable.vue" />
-      <change beforePath="$PROJECT_DIR$/src/drive/choice/tech.vue" afterPath="$PROJECT_DIR$/src/drive/choice/tech.vue" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" afterPath="$PROJECT_DIR$/src/App.vue" />
+      <change beforePath="$PROJECT_DIR$/src/drive/index/index.vue" afterPath="$PROJECT_DIR$/src/drive/index/index.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,14 +18,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/drive/index/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="162" column="27" lean-forward="false" selection-start-line="162" selection-start-column="12" selection-end-line="162" selection-end-column="27" />
+            <state relative-caret-position="472">
+              <caret line="164" column="19" lean-forward="true" selection-start-line="164" selection-start-column="19" selection-end-line="164" selection-end-column="19" />
               <folding>
-                <element signature="e#1010#1035#0" expanded="true" />
-                <element signature="e#3172#5594#0" expanded="false" />
+                <element signature="e#486#511#0" expanded="true" />
+                <element signature="e#2651#5073#0" expanded="false" />
+                <element signature="e#6578#6674#0" expanded="false" />
+                <element signature="e#6707#6836#0" expanded="false" />
+                <element signature="e#6882#6937#0" expanded="false" />
+                <element signature="e#7000#7056#0" expanded="false" />
+                <element signature="e#7103#7161#0" expanded="false" />
+                <element signature="e#7258#7274#0" expanded="false" />
+                <element signature="e#7324#7837#0" expanded="false" />
+                <element signature="e#7919#8092#0" expanded="false" />
+                <element signature="e#8202#8505#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="const.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tool/const.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="2" column="75" lean-forward="false" selection-start-line="2" selection-start-column="75" selection-end-line="2" selection-end-column="75" />
+              <folding>
+                <element signature="e#2721#2817#0" expanded="false" />
+                <element signature="e#2850#2979#0" expanded="false" />
+                <element signature="e#3025#3080#0" expanded="false" />
+                <element signature="e#3143#3199#0" expanded="false" />
+                <element signature="e#3246#3304#0" expanded="false" />
+                <element signature="e#3401#3417#0" expanded="false" />
+                <element signature="e#3467#3980#0" expanded="false" />
+                <element signature="e#4062#4235#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -68,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tech.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tech.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/drive/choice/tech.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
+            <state relative-caret-position="915">
               <caret line="63" column="8" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
               <folding>
                 <element signature="e#2390#4812#0" expanded="false" />
@@ -96,8 +133,8 @@
       <find>headImg</find>
       <find>choiceBtn</find>
       <find>hrefIntroduction</find>
-      <find>if</find>
       <find>getMsgTap</find>
+      <find>if</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -111,17 +148,17 @@
         <option value="$PROJECT_DIR$/build/webpack.base.conf.js" />
         <option value="$PROJECT_DIR$/build/webpack.prod.conf.js" />
         <option value="$PROJECT_DIR$/src/router.js" />
-        <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/tool/classFactory/car.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/drive/choice/choice.vue" />
         <option value="$PROJECT_DIR$/src/drive/secondary/secondary.vue" />
         <option value="$PROJECT_DIR$/src/drive/primary/primary.vue" />
         <option value="$PROJECT_DIR$/src/drive/introduction/introduction.vue" />
-        <option value="$PROJECT_DIR$/src/drive/index/index.vue" />
         <option value="$PROJECT_DIR$/src/drive/choice/fashion.vue" />
         <option value="$PROJECT_DIR$/src/drive/choice/reliable.vue" />
         <option value="$PROJECT_DIR$/src/drive/choice/tech.vue" />
+        <option value="$PROJECT_DIR$/src/App.vue" />
+        <option value="$PROJECT_DIR$/src/drive/index/index.vue" />
       </list>
     </option>
   </component>
@@ -225,13 +262,6 @@
               <item name="carH5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="drive" type="462c0819:PsiDirectoryNode" />
-              <item name="choice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carH5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carH5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="drive" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -254,72 +284,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="drive" type="462c0819:PsiDirectoryNode" />
               <item name="secondary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carH5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carH5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carH5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carH5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carH5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carH5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="btn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carH5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carH5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="choice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carH5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carH5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carH5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carH5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="introduction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carH5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carH5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carH5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carH5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carH5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carH5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
-              <item name="classFactory" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -383,12 +347,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558278843730</updated>
-      <workItem from="1558278845662" duration="30268000" />
+      <workItem from="1558278845662" duration="31305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30268000" />
+    <option name="totallyTimeSpent" value="31305000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -412,7 +376,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24954791" sideWeight="0.5062389" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28622755" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28622755" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -495,24 +459,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="162" lean-forward="false" selection-start-line="0" selection-start-column="162" selection-end-line="0" selection-end-column="162" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tool/const.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="e#138#168#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -688,17 +634,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/drive/index/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="162" column="27" lean-forward="false" selection-start-line="162" selection-start-column="12" selection-end-line="162" selection-end-column="27" />
-          <folding>
-            <element signature="e#1010#1035#0" expanded="true" />
-            <element signature="e#3172#5594#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/drive/choice/choice.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -731,10 +666,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/drive/choice/tech.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
+        <state relative-caret-position="915">
           <caret line="63" column="8" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
           <folding>
             <element signature="e#2390#4812#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tool/const.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="2" column="75" lean-forward="false" selection-start-line="2" selection-start-column="75" selection-end-line="2" selection-end-column="75" />
+          <folding>
+            <element signature="e#2721#2817#0" expanded="false" />
+            <element signature="e#2850#2979#0" expanded="false" />
+            <element signature="e#3025#3080#0" expanded="false" />
+            <element signature="e#3143#3199#0" expanded="false" />
+            <element signature="e#3246#3304#0" expanded="false" />
+            <element signature="e#3401#3417#0" expanded="false" />
+            <element signature="e#3467#3980#0" expanded="false" />
+            <element signature="e#4062#4235#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/drive/index/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="164" column="19" lean-forward="true" selection-start-line="164" selection-start-column="19" selection-end-line="164" selection-end-column="19" />
+          <folding>
+            <element signature="e#486#511#0" expanded="true" />
+            <element signature="e#2651#5073#0" expanded="false" />
+            <element signature="e#6578#6674#0" expanded="false" />
+            <element signature="e#6707#6836#0" expanded="false" />
+            <element signature="e#6882#6937#0" expanded="false" />
+            <element signature="e#7000#7056#0" expanded="false" />
+            <element signature="e#7103#7161#0" expanded="false" />
+            <element signature="e#7258#7274#0" expanded="false" />
+            <element signature="e#7324#7837#0" expanded="false" />
+            <element signature="e#7919#8092#0" expanded="false" />
+            <element signature="e#8202#8505#0" expanded="false" />
           </folding>
         </state>
       </provider>
