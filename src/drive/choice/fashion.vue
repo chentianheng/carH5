@@ -1,9 +1,10 @@
 <template>
     <div class="container" @click="getMsgTap">
         <div class="headImg" >
-            <img v-if="userMsg.headimgurl" :src="userMsg.headimgurl">
+            <img :src="userMsg.headimgurl" style="height: auto;
+    width: 86px;">
         </div>
-        <div class="username" v-if="userMsg.nickname">{{ userMsg.nickname }}</div>
+        <div class="username">{{ userMsg.nickname ? 'userMsg.nickname' : '点击登录' }}</div>
         <div class="userTitle">就是时尚范西客</div>
         <div class="subtitle1">讲究设计、质感、搭配</div>
         <div class="subtitle2">你就是行走在都市中的时髦精</div>
@@ -96,10 +97,10 @@
         position: absolute;
         top: 2rem;
         left: 1rem;
-        width: 3rem;
-        height: 3rem;
-        padding: 0.5rem;
-        background-color: #FFFFFF;
+        /*width: 4rem;*/
+        /*height: 4rem;*/
+        /*padding: 0.5rem;*/
+        /*background-color: #FFFFFF;*/
     }
     .username {
         position: absolute;
