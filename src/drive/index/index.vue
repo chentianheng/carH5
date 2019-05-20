@@ -59,6 +59,9 @@
                 },
             }
         },
+        mounted(){
+            console.log('hahaha')
+        },
         created () {
             var option = getParams(location.search);
             console.log('hcj')
