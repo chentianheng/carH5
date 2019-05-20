@@ -1,7 +1,7 @@
 <template>
     <div class="container" @click="getMsgTap">
         <div class="headImg" >
-            <img v-if="userMsg.headimgurl" class="XC40" :src="userMsg.headimgurl">
+            <img v-if="userMsg.headimgurl" :src="userMsg.headimgurl">
         </div>
         <div class="username" v-if="userMsg.nickname">{{ userMsg.nickname }}</div>
         <div class="userTitle">就是时尚范西客</div>
