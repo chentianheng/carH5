@@ -47,7 +47,7 @@
                     waiting: true,
                     preload: 'auto'
                 },
-                time:3,
+                time:10,
                 controlList: {
                     // 不显示下载
                     noDownload: false,

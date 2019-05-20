@@ -51,17 +51,17 @@
       <file leaf-file-name="App.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+            <state relative-caret-position="394">
+              <caret line="53" column="25" lean-forward="true" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="e#1009#1039#0" expanded="true" />
-                <element signature="e#4710#4806#0" expanded="false" />
-                <element signature="e#5040#5095#0" expanded="false" />
-                <element signature="e#5171#5227#0" expanded="false" />
-                <element signature="e#5286#5344#0" expanded="false" />
-                <element signature="e#5544#6061#0" expanded="false" />
-                <element signature="e#6156#6329#0" expanded="false" />
+                <element signature="e#4711#4807#0" expanded="false" />
+                <element signature="e#5041#5096#0" expanded="false" />
+                <element signature="e#5172#5228#0" expanded="false" />
+                <element signature="e#5287#5345#0" expanded="false" />
+                <element signature="e#5545#6062#0" expanded="false" />
+                <element signature="e#6157#6330#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -392,12 +392,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558278843730</updated>
-      <workItem from="1558278845662" duration="40900000" />
+      <workItem from="1558278845662" duration="40970000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40900000" />
+    <option name="totallyTimeSpent" value="40970000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -769,17 +769,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+        <state relative-caret-position="394">
+          <caret line="53" column="25" lean-forward="true" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#1009#1039#0" expanded="true" />
-            <element signature="e#4710#4806#0" expanded="false" />
-            <element signature="e#5040#5095#0" expanded="false" />
-            <element signature="e#5171#5227#0" expanded="false" />
-            <element signature="e#5286#5344#0" expanded="false" />
-            <element signature="e#5544#6061#0" expanded="false" />
-            <element signature="e#6156#6329#0" expanded="false" />
+            <element signature="e#4711#4807#0" expanded="false" />
+            <element signature="e#5041#5096#0" expanded="false" />
+            <element signature="e#5172#5228#0" expanded="false" />
+            <element signature="e#5287#5345#0" expanded="false" />
+            <element signature="e#5545#6062#0" expanded="false" />
+            <element signature="e#6157#6330#0" expanded="false" />
           </folding>
         </state>
       </provider>
