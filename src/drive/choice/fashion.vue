@@ -34,27 +34,36 @@
     export default {
         data(){
             return{
-                username:'范西客'
+                username:'范西客',
+                code:''
             }
         },
         created () {
             var option = getParams(location.search);
+            if(option.code){
+                this.code = option.code
+                this.getAccess_token(this.code)
+            }
             console.log(option)
-            this.url()
+            // this.url()
         },
         methods:{
-            url(){
-                var url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' + 'wx3450d66aef061ce2' + '&redirect_uri=' +
-                    encodeURIComponent('http://h5share.yf-gz.cn/h5/index.html#/fashion') + '&response_type=' +
-                    'code' + '&scope=' + 'snsapi_userinfo' + '&state=' + 123 + '#wechat_redirect'
-
-                console.log(url)
-            },
+            // url(){
+            //     var url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' + 'wx3450d66aef061ce2' + '&redirect_uri=' +
+            //         encodeURIComponent('http://h5share.yf-gz.cn/h5/index.html#/fashion') + '&response_type=' +
+            //         'code' + '&scope=' + 'snsapi_userinfo' + '&state=' + 123 + '#wechat_redirect'
+            //
+            //     console.log(url)
+            // },
             getMsgTap(){
                 var url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' + 'wx3450d66aef061ce2' + '&redirect_uri=' +
                     encodeURIComponent('http://h5share.yf-gz.cn/h5/index.html#/index') + '&response_type=' +
                     'code' + '&scope=' + 'snsapi_userinfo' + '&state=' + 123 + '#wechat_redirect'
                 window.location.href = url
+            },
+            getAccess_token(code){
+                var url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid='+ 'wx3450d66aef061ce2' + '&secret=' + 'SECRET' +
+                '&code=' + code + '&grant_type=' + 'authorization_code'
             },
             hrefChoice(){
                 this.$router.push({ path:'/choice' })
