@@ -1,13 +1,15 @@
 <template>
     <div class="container" >
-        <div class="headImg" @click="getMsgTap">
-            <img v-if="userMsg.headImgUrl" :src="userMsg.headImgUrl" style="height: 69px;
+        <div>
+            <div class="headImg" @click="getMsgTap">
+                <img v-if="userMsg.headImgUrl" :src="userMsg.headImgUrl" style="height: 69px;
     width: auto;">
+            </div>
+            <div class="username" @click="getMsgTap">{{ userMsg.nickName ? userMsg.nickName : '点击登录' }}</div>
+            <div class="userTitle">就是时尚范西客</div>
+            <div class="subtitle1">讲究设计、质感、搭配</div>
+            <div class="subtitle2">你就是行走在都市中的时髦精</div>
         </div>
-        <div class="username" @click="getMsgTap">{{ userMsg.nickName ? userMsg.nickName : '点击登录' }}</div>
-        <div class="userTitle">就是时尚范西客</div>
-        <div class="subtitle1">讲究设计、质感、搭配</div>
-        <div class="subtitle2">你就是行走在都市中的时髦精</div>
         <img class="XC40" src="../../images/assets/btn/xc40.png">
         <div class="backBtn">
             <button  @click="hrefChoice" class="choiceBtn">再测一次</button>
