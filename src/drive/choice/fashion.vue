@@ -61,7 +61,7 @@
             if(localStorage.getItem('headImgUrl')){
                 this.userMsg.headImgUrl = localStorage.getItem('headImgUrl');
             }
-            this.getMember()
+            // this.getMember()
         },
         methods:{
             share () {
