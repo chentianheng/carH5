@@ -51,7 +51,7 @@
                 this.code = option.code
                 this.getAccess_token(this.code)
             }
-            console.log(localStorage.getItem('userMsg'))
+            console.log(localStorage.getItem('userMsg').nickName)
             if(localStorage.getItem('userMsg'))
             this.userMsg = localStorage.getItem('userMsg');
         },
