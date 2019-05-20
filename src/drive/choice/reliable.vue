@@ -50,7 +50,7 @@
                 this.code = option.code
                 this.getAccess_token(this.code)
             }
-            console.log(localStorage.getItem('userMsg').nickName)
+            // console.log(localStorage.getItem('userMsg').nickName)
             if(localStorage.getItem('nickName')){
                 this.userMsg.nickName = localStorage.getItem('nickName');
             }

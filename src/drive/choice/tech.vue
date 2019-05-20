@@ -1,7 +1,10 @@
 <template>
     <div class="container">
-        <div class="headImg" ></div>
-        <div class="username">{{ username }}</div>
+        <div class="headImg" >
+            <img v-if="userMsg.headImgUrl" :src="userMsg.headImgUrl" style="height: auto;
+    width: 86px;">
+        </div>
+        <div class="username">{{ userMsg.nickName ? userMsg.nickName : '点击登录' }}</div>
         <div class="userTitle">就是科技范西客</div>
         <div class="subtitle1">手机用新款，电脑要高配</div>
         <div class="subtitle2">你是执着于拥有酷炫装备的科技控</div>
@@ -47,7 +50,7 @@
                 this.code = option.code
                 this.getAccess_token(this.code)
             }
-            console.log(localStorage.getItem('userMsg').nickName)
+            // console.log(localStorage.getItem('userMsg').nickName)
             if(localStorage.getItem('nickName')){
                 this.userMsg.nickName = localStorage.getItem('nickName');
             }
