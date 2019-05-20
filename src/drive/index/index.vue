@@ -162,8 +162,12 @@
                     let list = res.data.data || [];
                     console.log(list)
                     that.userMsg = list
-                    localStorage.setItem('nickName',list.nickName);
-                    localStorage.setItem('headImgUrl',list.headImgUrl);
+                    if(list.nickName){
+                        localStorage.setItem('nickName',list.nickName);
+                    }
+                    if(list.headImgUrl){
+                        localStorage.setItem('headImgUrl',list.headImgUrl);
+                    }
                 });
             },
             hrefChoice(){
