@@ -64,6 +64,7 @@
             getAccess_token(code){
                 var url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid='+ 'wx3450d66aef061ce2' + '&secret=' + 'SECRET' +
                 '&code=' + code + '&grant_type=' + 'authorization_code'
+                window.location.href = url
             },
             hrefChoice(){
                 this.$router.push({ path:'/choice' })
