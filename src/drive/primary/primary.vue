@@ -31,6 +31,8 @@
         name: "main",
         data(){
             return{
+                copyUrl: 'http://h5share.yf-gz.cn/h5/index.html#/primary',
+                shareImg: 'https://zhaocha.yf-gz.cn/file/1558329389276_bf3be9dc56d3db5a0ed0d9d39fd00151.png',
                 isshow:false,
                 member:{
                     name: null,
@@ -43,7 +45,86 @@
                 msg:'信息不全',
             }
         },
+        created () {
+            this.getMember()
+        },
         methods:{
+            share () {
+                console.log('share')
+                var that = this
+                this.option = {
+                    title: 'VOLVO FUN SEEKER ASSEMBLE', // 分享标题, 请自行替换
+                    desc: '选择一个你的标签，看看你是范西客哪一型？', // 分享描述, 请自行替换
+                    link: that.copyUrl, // 分享链接，根据自身项目决定是否需要split
+                    imgUrl: that.shareImg // 分享图标, 请自行替换，需要绝对路径
+                }
+                wx.onMenuShareTimeline({
+                    title: that.option.title, // 分享标题
+                    link: that.option.link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                    imgUrl: that.option.imgUrl, // 分享图标
+                    success () {
+                        alert('分享朋友圈成功')
+                        // 用户确认分享后执行的回调函数
+                    },
+                    cancel () {
+                        // 用户取消分享后执行的回调函数
+                    }})
+                wx.onMenuShareAppMessage({
+                    title: that.option.title, // 分享标题
+                    desc: that.option.desc, // 分享描述
+                    link: that.option.link,
+                    imgUrl: that.option.imgUrl, // 分享图标
+                    success: function () {
+                        alert('分享给朋友成功')
+                        // 用户确认分享后执行的回调函数
+                    },
+                    cancel: function () {
+                        // 用户取消分享后执行的回调函数
+                    }
+                })
+                wx.updateTimelineShareData({
+                    title: '选择一个你的标签，看看你是范西客哪一型？', // 分享标题
+                    link: that.option.link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                    imgUrl: that.option.imgUrl, // 分享图标
+                    success () {
+                        // alert('分享朋友圈成功')
+                        // 用户确认分享后执行的回调函数
+                    },
+                    cancel () {
+                        // 用户取消分享后执行的回调函数
+                    }
+                })
+                wx.updateAppMessageShareData({
+                    title: that.option.title, // 分享标题
+                    desc: that.option.desc, // 分享描述
+                    link: that.option.link,
+                    imgUrl: that.option.imgUrl, // 分享图标
+                    success: function () {
+                        // alert('分享给朋友成功')
+                        // 用户确认分享后执行的回调函数
+                    },
+                    cancel: function () {
+                        // 用户取消分享后执行的回调函数
+                    }
+                })
+            },
+            getMember(){
+                const that = this;
+                Drive.prototype.getMember().then(res => {
+                    let list = res.data.data || [];
+                    that.userMsg = list
+                    that.share()
+                    console.log(list)
+                });
+            },
+            hrefMain(){
+                // this.$router.push({ path:'/primary' })
+                this.$router.push('../primary')
+            },
+            hrefSecondary(){
+                // this.$router.push({ path:'/secondary' })
+                this.$router.push('../secondary')
+            },
             postMember(){
                 const that = this;
                 console.log(that.member)
