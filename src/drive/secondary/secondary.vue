@@ -17,7 +17,7 @@
         </div>
         <div class="input">
             <label for="tel">城市：</label>
-            <input id="city" type="text"  v-model="member.city">
+            <input id="city" type="text"  v-model="member.city" style="font-size: 15px;">
         </div>
         <button @click="mainSubmit" class="submitBtn"></button>
         <p class="submitFooter">*活动详情敬请咨询沃尔沃当地授权经销商</p>
