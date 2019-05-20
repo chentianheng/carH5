@@ -25,7 +25,7 @@
         data() {
             return {
                 myHeight: (window.innerHeight) + 'px',
-                music:'http://qiniu.jindou360.com/FgS86ODTt7EjQPAL82WVgBDmEu2I',
+                music:'https://zhaocha.yf-gz.cn/file/1558359586024_7e903f1a0ab60a058a2f3157b9ac84c8.mp3',
                 audio: {
                     currentTime: 0,
                     maxTime: 0,
