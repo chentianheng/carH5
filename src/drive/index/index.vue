@@ -70,6 +70,8 @@
                 this.code = option.code
                 this.getAccess_token(this.code)
             }
+            console.log(localStorage.getItem('nickName'))
+            console.log(localStorage.getItem('headImgUrl'))
             if(localStorage.getItem('nickName')){
                 this.userMsg.nickName = localStorage.getItem('nickName');
             }
