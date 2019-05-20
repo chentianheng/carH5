@@ -1,7 +1,7 @@
 <template>
     <div class="container" @click="getMsgTap">
         <div class="headImg" >
-            <img :src="userMsg.headImgUrl" style="height: auto;
+            <img v-if="userMsg.headImgUrl" :src="userMsg.headImgUrl" style="height: auto;
     width: 86px;">
         </div>
         <div class="username">{{ userMsg.nickName ? userMsg.nickName : '点击登录' }}</div>
@@ -51,6 +51,8 @@
                 this.code = option.code
                 this.getAccess_token(this.code)
             }
+            console.log(localStorage.getItem('userMsg'))
+            if(localStorage.getItem('userMsg'))
             this.userMsg = localStorage.getItem('userMsg');
         },
         methods:{
