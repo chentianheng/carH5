@@ -174,7 +174,7 @@
     }
     .headImg {
         position: absolute;
-        top: 2rem;
+        top: 3rem;
         left: 1rem;
         width: 4rem;
         height: 4rem;
@@ -183,7 +183,7 @@
     }
     .username {
         position: absolute;
-        top: 6rem;
+        top: 7rem;
         left: 1.5rem;
         color: #FFFFFF;
         margin-top: 6px;
@@ -191,7 +191,7 @@
     .userTitle {
         font-size: 1.2rem;
         position: absolute;
-        top: 9rem;
+        top: 9.5rem;
         left: 1.5rem;
         color: #FFFFFF;
         background-color: black;
@@ -199,7 +199,7 @@
     }
     .subtitle1{
         position: absolute;
-        top: 11rem;
+        top: 11.3rem;
         left: 1.5rem;
         color: #FFFFFF;
         background-color: black;
@@ -207,7 +207,7 @@
     }
     .subtitle2{
         position: absolute;
-        top: 12.5rem;
+        top: 12.8rem;
         left: 1.5rem;
         color: #FFFFFF;
         background-color: black;
