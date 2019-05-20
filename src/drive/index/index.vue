@@ -18,8 +18,8 @@
         },
         data () {
             return {
-                copyUrl: 'https://jiayi.yf-gz.cn/?superiorId=" + customer.getId() + "#/my',
-                shareImg: 'https://zhaocha.yf-gz.cn/file/1547712343646_1f34c44062c690edeacba339a53a07f1.png'
+                copyUrl: 'http://h5share.yf-gz.cn/h5/index.html#/index',
+                shareImg: 'https://zhaocha.yf-gz.cn/file/1558329389276_bf3be9dc56d3db5a0ed0d9d39fd00151.png'
             }
         },
         created () {

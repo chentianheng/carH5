@@ -12,6 +12,9 @@
         <div class="nextBtn">
             <button @click="hrefIntroduction" class="choiceBtn">与沃同行</button>
         </div>
+        <div>
+            <img class="qrcode" src="../../images/assets/home/qrcode.png">
+        </div>
     </div>
 </template>
 
@@ -20,7 +23,7 @@
     export default {
         data(){
             return{
-                username:'范西客',
+                username:'范西客'
             }
         },
         methods:{
@@ -90,6 +93,12 @@
         left: 1.5rem;
         bottom: 8rem;
         width: 30%;
+    }
+    .qrcode{
+        position: absolute;
+        right: 2.5rem;
+        bottom: 3rem;
+        width: 23%;
     }
     .backBtn{
         position: absolute;
