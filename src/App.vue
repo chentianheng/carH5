@@ -77,7 +77,7 @@
                     setTimeout(this.timer, 1000);
                 } else {
                     this.time = 0;
-                    this.showPositionValue = true
+                    // this.showPositionValue = true
                     return this.audio.playing ? this.pausePlay() : this.startPlay()
                 }
             },
@@ -188,7 +188,7 @@
             }
         },
         mounted() {
-            this.timer()
+            // this.timer()
             this.wxConfig()
         }
         ,

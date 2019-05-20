@@ -20,6 +20,9 @@
         <div>
             <img class="qrcode" src="../../images/assets/home/qrcode.png">
         </div>
+        <div style="    color: white;position: absolute;bottom: 11px;right: 36px;font-size: 15px;">
+            <span>截图分享朋友圈，赢音乐派对门票</span>
+        </div>
 
     </div>
 </template>
@@ -40,7 +43,7 @@
     export default {
         data(){
             return{
-                copyUrl: 'http://h5share.yf-gz.cn/h5/index.html#/fashion',
+                copyUrl: 'http://h5share.yf-gz.cn/h5/index.html#/index',
                 shareImg: 'https://zhaocha.yf-gz.cn/file/1558329389276_bf3be9dc56d3db5a0ed0d9d39fd00151.png',
                 username:'范西客',
                 code:'',

@@ -11,7 +11,7 @@
     export default {
         data(){
             return{
-                copyUrl: 'http://h5share.yf-gz.cn/h5/index.html#/introduction',
+                copyUrl: 'http://h5share.yf-gz.cn/h5/index.html#/index',
                 shareImg: 'https://zhaocha.yf-gz.cn/file/1558329389276_bf3be9dc56d3db5a0ed0d9d39fd00151.png'
             }
         },
