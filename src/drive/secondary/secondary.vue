@@ -5,19 +5,19 @@
         <p>报名参与活动，有机会免费获得精美礼品！</p>
         <div class="input">
             <label for="name">姓名：</label>
-            <input id="name" type="text">
+            <input id="name" type="text" v-model="member.name">
         </div>
         <div class="input">
             <label for="tel">电话：</label>
-            <input id="tel" type="number">
+            <input id="tel" type="number" v-model="member.phone">
         </div>
         <div class="input">
             <label for="tel">省份：</label>
-            <input id="province" type="text">
+            <input id="province" type="text" v-model="member.province">
         </div>
         <div class="input">
             <label for="tel">城市：</label>
-            <input id="city" type="text" >
+            <input id="city" type="text"  v-model="member.city">
         </div>
         <button @click="mainSubmit" class="submitBtn"></button>
         <p class="submitFooter">*活动详情敬请咨询沃尔沃当地授权经销商</p>
@@ -26,21 +26,49 @@
         <div class="thxContainer" v-show="isshow">
             <img src="../../images/assets/btn/thx.png" alt="" height="200" width="200">
         </div>
+        <toast v-model="showPositionValue" type="text" :time="800" is-show-mask :text="msg" :position="middle">{{msg}}</toast>
     </div>
 </template>
 
 <script>
     import Drive from '@/tool/classFactory/car.js';
+    import {Toast } from 'vux'
     export default {
+        components: {
+            Toast
+        },
         name: "secondary",
         data(){
             return{
-                isshow:false
+                isshow:false,
+                showPositionValue: false,
+                middle: 'middle',
+                msg:'信息不全',
+                member:{
+                    name: null,
+                    phone: null,
+                    province: null,
+                    city: null
+                },
             }
         },
         methods:{
+            postMember(){
+                const that = this;
+                console.log(that.member)
+                if(that.member.phone && that.member.name){
+                    Drive.prototype.postMember(that.member).then(res => {
+                        let list = res.data.data || [];
+                        that.isshow = true
+                        console.log(list)
+                    });
+                }else {
+                    that.showPositionValue = true
+                }
+
+            },
             mainSubmit(){
-                this.isshow = true
+                this.postMember()
             }
         }
     }
@@ -57,7 +85,7 @@
         width: 100%;
     }
     p{
-        margin-top: 8rem;
+        margin-top: 7rem;
         color: #FFFFFF;
     }
     p + p {
@@ -65,8 +93,8 @@
     }
     .input{
         background-color: rgba(239,63,129,0.7);
-        padding: 0.5rem;
-        margin-top: 1rem;
+        padding: 0.4rem;
+        margin-top: 0.8rem;
     }
     .input label{
         display: inline-flex;
@@ -85,13 +113,15 @@
         border-style: none;
         width: 12rem;
         height: 1.5rem;
-        margin-top: 9rem;
+        position: absolute;
+        bottom: 41px;
         opacity: 0.8;
     }
     .submitFooter{
         color: #FFFFFF;
         font-size: 0.7rem;
-        margin-top: 1rem;
+        position: absolute;
+        bottom: 15px;
     }
     .thxContainer{
         display: flex;

@@ -81,7 +81,7 @@ export const appRouter = [
             keepAlive: false
         },
         component: resolve => {
-            require(['./drive/primary/primary'], resolve);
+                require(['./drive/primary/primary'], resolve);
         }
     },
     {

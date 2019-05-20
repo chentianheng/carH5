@@ -60,7 +60,9 @@
         height: 1.5rem;
     }
     .imgFooter{
-        margin-top: 15.5rem;
+        width: 70%;
+        position: absolute;
+        bottom: 25px;
         width: 70%;
     }
 </style>

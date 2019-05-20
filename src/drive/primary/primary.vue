@@ -4,11 +4,11 @@
         <p>报名参与，有机会免费获得音乐派对门票！</p>
         <div class="input">
             <label for="name">姓名：</label>
-            <input id="name" type="text">
+            <input id="name" type="text" v-model="member.name">
         </div>
         <div class="input">
             <label for="tel">电话：</label>
-            <input id="tel" type="number">
+            <input id="tel" type="number" v-model="member.phone">
         </div>
         <button @click="mainSubmit" class="submitBtn"></button>
         <p class="submitFooter">*活动详情敬请咨询沃尔沃当地授权经销商</p>
@@ -17,21 +17,49 @@
         <div class="thxContainer" v-show="isshow">
             <img src="../../images/assets/btn/thx.png" alt="" height="200" width="200">
         </div>
+        <toast v-model="showPositionValue" type="text" :time="800" is-show-mask :text="msg" :position="middle">{{msg}}</toast>
     </div>
 </template>
 
 <script>
+    import {Toast} from 'vux'
     import Drive from '@/tool/classFactory/car.js';
     export default {
+        components: {
+            Toast
+        },
         name: "main",
         data(){
             return{
-                isshow:false
+                isshow:false,
+                member:{
+                    name: null,
+                    phone: null,
+                    province: null,
+                    city: null
+                },
+                showPositionValue: false,
+                middle: 'middle',
+                msg:'信息不全',
             }
         },
         methods:{
+            postMember(){
+                const that = this;
+                console.log(that.member)
+                if(that.member.phone && that.member.name){
+                    Drive.prototype.postMember(that.member).then(res => {
+                        let list = res.data.data || [];
+                        that.isshow = true
+                        console.log(list)
+                    });
+                }else {
+                    that.showPositionValue = true
+                }
+
+            },
             mainSubmit(){
-                this.isshow = true
+                this.postMember()
             }
         }
     }
@@ -76,13 +104,15 @@
         border-style: none;
         width: 12rem;
         height: 1.5rem;
-        margin-top: 13rem;
+        position: absolute;
+        bottom: 34px;
         opacity: 0.8;
     }
     .submitFooter{
         color: #FFFFFF;
         font-size: 0.7rem;
-        margin-top: 1rem;
+        position: absolute;
+        bottom: 10px;
     }
     .thxContainer{
         display: flex;
