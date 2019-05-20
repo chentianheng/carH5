@@ -110,11 +110,13 @@
         width: 100%;
     }
     .btn1{
-        margin-top: 18rem;
         width: 30%;
+        position: absolute;
+        top: 18rem;
     }
     .btn2{
-        margin-top: 15rem;
         width: 30%;
+        position: absolute;
+        bottom: 4rem;
     }
 </style>
