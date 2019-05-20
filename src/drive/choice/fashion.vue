@@ -1,10 +1,10 @@
 <template>
     <div class="container" @click="getMsgTap">
         <div class="headImg" >
-            <img :src="userMsg.headimgurl" style="height: auto;
+            <img :src="userMsg.headImgUrl" style="height: auto;
     width: 86px;">
         </div>
-        <div class="username">{{ userMsg.nickname ? 'userMsg.nickname' : '点击登录' }}</div>
+        <div class="username">{{ userMsg.nickName ? userMsg.nickName : '点击登录' }}</div>
         <div class="userTitle">就是时尚范西客</div>
         <div class="subtitle1">讲究设计、质感、搭配</div>
         <div class="subtitle2">你就是行走在都市中的时髦精</div>
@@ -48,17 +48,8 @@
                 this.code = option.code
                 this.getAccess_token(this.code)
             }
-            console.log(option)
-            // this.url()
         },
         methods:{
-            // url(){
-            //     var url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' + 'wx3450d66aef061ce2' + '&redirect_uri=' +
-            //         encodeURIComponent('http://h5share.yf-gz.cn/h5/index.html#/fashion') + '&response_type=' +
-            //         'code' + '&scope=' + 'snsapi_userinfo' + '&state=' + 123 + '#wechat_redirect'
-            //
-            //     console.log(url)
-            // },
             getMsgTap(){
                 var url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' + 'wx3450d66aef061ce2' + '&redirect_uri=' +
                     encodeURIComponent('http://h5share.yf-gz.cn/h5/index.html#/fashion') + '&response_type=' +
@@ -71,6 +62,7 @@
                     let list = res.data.data || [];
                     console.log(list)
                     that.userMsg = list
+
                 });
             },
             hrefChoice(){
@@ -97,8 +89,8 @@
         position: absolute;
         top: 2rem;
         left: 1rem;
-        /*width: 4rem;*/
-        /*height: 4rem;*/
+        width: 4rem;
+        height: 4rem;
         /*padding: 0.5rem;*/
         /*background-color: #FFFFFF;*/
     }
