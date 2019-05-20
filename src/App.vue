@@ -47,7 +47,7 @@
                     waiting: true,
                     preload: 'auto'
                 },
-                time:50,
+                time:3,
                 controlList: {
                     // 不显示下载
                     noDownload: false,
@@ -77,6 +77,7 @@
                     setTimeout(this.timer, 1000);
                 } else {
                     this.time = 0;
+                    this.showPositionValue = true
                     return this.audio.playing ? this.pausePlay() : this.startPlay()
                 }
             },
@@ -177,7 +178,7 @@
             // 语音元数据主要是语音的长度之类的数据
             onLoadedmetadata(res) {
                 console.log('onLoadedmetadata')
-                this.showPositionValue = true
+                // this.showPositionValue = true
                 const that = this
                 this.audio.waiting = false
                 this.audio.maxTime = parseInt(res.target.duration)
