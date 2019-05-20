@@ -14,10 +14,12 @@
         },
         methods:{
             hrefMain(){
-                this.$router.push({ path:'/main' })
+                // this.$router.push({ path:'/primary' })
+                this.$router.push('../primary')
             },
             hrefSecondary(){
-                this.$router.push({ path:'/secondary' })
+                // this.$router.push({ path:'/secondary' })
+                this.$router.push('../secondary')
             }
         }
     }

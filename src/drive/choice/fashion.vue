@@ -77,10 +77,12 @@
                 });
             },
             hrefChoice(){
-                this.$router.push({ path:'/choice' })
+                // this.$router.push({ path:'/choice' })
+                this.$router.push('../choice')
             },
             hrefIntroduction(){
-                this.$router.push({ path:'/introduction' })
+                // this.$router.push({ path:'/introduction' })
+                this.$router.push('../introduction')
             }
         }
     }
