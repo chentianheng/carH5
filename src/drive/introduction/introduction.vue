@@ -112,7 +112,7 @@
     .btn1{
         width: 30%;
         position: absolute;
-        top: 18rem;
+        top: 17rem;
     }
     .btn2{
         width: 30%;
