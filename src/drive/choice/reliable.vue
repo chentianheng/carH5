@@ -1,10 +1,10 @@
 <template>
     <div class="container">
-        <div class="headImg" >
-            <img v-if="userMsg.headImgUrl" :src="userMsg.headImgUrl" style="height: auto;
-    width: 86px;">
+        <div class="headImg" @click="getMsgTap">
+            <img v-if="userMsg.headImgUrl" :src="userMsg.headImgUrl" style="height: 69px;
+    width: auto;">
         </div>
-        <div class="username">{{ userMsg.nickName ? userMsg.nickName : '点击登录' }}</div>
+        <div class="username" @click="getMsgTap">{{ userMsg.nickName ? userMsg.nickName : '点击登录' }}</div>
         <div class="userTitle">就是靠谱范西客</div>
         <div class="subtitle1">不用担心神一般的对手</div>
         <div class="subtitle2">只因有你这样靠谱的队友</div>
