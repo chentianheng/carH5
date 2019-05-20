@@ -33,7 +33,7 @@
                     currentTime: 0,
                     maxTime: 0,
                     playing: false,
-                    muted: false,
+                    muted: true,
                     speed: 1,
                     waiting: true,
                     preload: 'auto'
