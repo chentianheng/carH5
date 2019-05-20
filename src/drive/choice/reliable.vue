@@ -99,16 +99,15 @@
         position: absolute;
         top: 2rem;
         left: 1rem;
-        width: 3rem;
-        height: 3rem;
-        padding: 0.5rem;
-        background-color: #FFFFFF;
+        width: 4rem;
+        height: 4rem;
     }
     .username {
         position: absolute;
         top: 6rem;
         left: 1.5rem;
         color: #FFFFFF;
+        margin-top: 6px;
     }
     .userTitle {
         font-size: 1.2rem;
