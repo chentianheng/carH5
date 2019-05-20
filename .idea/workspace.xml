@@ -4,7 +4,6 @@
     <list default="true" id="270200d2-59d7-4930-a395-793fc1351d23" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" afterPath="$PROJECT_DIR$/src/App.vue" />
-      <change beforePath="$PROJECT_DIR$/src/drive/index/index.vue" afterPath="$PROJECT_DIR$/src/drive/index/index.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -52,18 +51,16 @@
       <file leaf-file-name="App.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+            <state relative-caret-position="276">
+              <caret line="142" column="31" lean-forward="false" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#2876#2972#0" expanded="false" />
-                <element signature="e#3005#3134#0" expanded="false" />
-                <element signature="e#3180#3235#0" expanded="false" />
-                <element signature="e#3298#3354#0" expanded="false" />
-                <element signature="e#3401#3459#0" expanded="false" />
-                <element signature="e#3556#3572#0" expanded="false" />
-                <element signature="e#3622#4135#0" expanded="false" />
-                <element signature="e#4217#4390#0" expanded="false" />
+                <element signature="e#3183#3279#0" expanded="false" />
+                <element signature="e#3487#3542#0" expanded="false" />
+                <element signature="e#3605#3661#0" expanded="false" />
+                <element signature="e#3708#3766#0" expanded="false" />
+                <element signature="e#3929#4442#0" expanded="false" />
+                <element signature="e#4524#4697#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -391,12 +388,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558278843730</updated>
-      <workItem from="1558278845662" duration="37008000" />
+      <workItem from="1558278845662" duration="37676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37008000" />
+    <option name="totallyTimeSpent" value="37676000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -757,18 +754,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        <state relative-caret-position="276">
+          <caret line="142" column="31" lean-forward="false" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2876#2972#0" expanded="false" />
-            <element signature="e#3005#3134#0" expanded="false" />
-            <element signature="e#3180#3235#0" expanded="false" />
-            <element signature="e#3298#3354#0" expanded="false" />
-            <element signature="e#3401#3459#0" expanded="false" />
-            <element signature="e#3556#3572#0" expanded="false" />
-            <element signature="e#3622#4135#0" expanded="false" />
-            <element signature="e#4217#4390#0" expanded="false" />
+            <element signature="e#3183#3279#0" expanded="false" />
+            <element signature="e#3487#3542#0" expanded="false" />
+            <element signature="e#3605#3661#0" expanded="false" />
+            <element signature="e#3708#3766#0" expanded="false" />
+            <element signature="e#3929#4442#0" expanded="false" />
+            <element signature="e#4524#4697#0" expanded="false" />
           </folding>
         </state>
       </provider>
