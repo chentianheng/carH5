@@ -36,11 +36,11 @@
         width: 100%;
     }
     .btn1{
-        margin-top: 16rem;
+        margin-top: 18rem;
         width: 30%;
     }
     .btn2{
-        margin-top: 13rem;
+        margin-top: 15rem;
         width: 30%;
     }
 </style>
