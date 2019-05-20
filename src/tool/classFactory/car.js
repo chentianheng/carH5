@@ -56,6 +56,7 @@ export default class Car {
         return Axios({
             url: `/api/wx/mp/updateUserInfo`,
             method: 'post',
+            isFormData:true,
             data: {
                 code:code
             }
