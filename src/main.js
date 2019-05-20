@@ -31,3 +31,13 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount('#app-box')
+document.addEventListener('DOMContentLoaded', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById(' music_mp3_0 ');
+        audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        }, false);
+    }
+    audioAutoPlay();
+});
