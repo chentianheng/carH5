@@ -152,7 +152,7 @@
             },
             getMsgTap(){
                 var url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' + 'wx3450d66aef061ce2' + '&redirect_uri=' +
-                    encodeURIComponent('http://h5share.yf-gz.cn/h5/index.html#/fashion') + '&response_type=' +
+                    encodeURIComponent('http://h5share.yf-gz.cn/h5/index.html#/index') + '&response_type=' +
                     'code' + '&scope=' + 'snsapi_userinfo' + '&state=' + 123 + '#wechat_redirect'
                 window.location.href = url
             },
