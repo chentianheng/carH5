@@ -162,10 +162,10 @@
                     let list = res.data.data || [];
                     console.log(list)
                     that.userMsg = list
-                    if(list.nickName){
+                    if(list){
                         localStorage.setItem('nickName',list.nickName);
                     }
-                    if(list.headImgUrl){
+                    if(list){
                         localStorage.setItem('headImgUrl',list.headImgUrl);
                     }
                 });
