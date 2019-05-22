@@ -197,7 +197,7 @@
     }
     .subtitle1{
         position: absolute;
-        top: 11.3rem;
+        top: 11.5rem;
         left: 1.5rem;
         color: #FFFFFF;
         background-color: black;
@@ -205,7 +205,7 @@
     }
     .subtitle2{
         position: absolute;
-        top: 12.8rem;
+        top: 13.2rem;
         left: 1.5rem;
         color: #FFFFFF;
         background-color: black;
@@ -218,10 +218,12 @@
         width: 30%;
     }
     .qrcode{
+        background-color: #FFFFFF;
         position: absolute;
         right: 2.5rem;
         bottom: 3rem;
         width: 23%;
+        padding: 0.2rem;
     }
     .backBtn{
         position: absolute;
