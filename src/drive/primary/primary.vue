@@ -171,13 +171,15 @@
     }
     .input label{
         display: inline-flex;
-        vertical-align: top;
+        /*vertical-align: top;*/
         color: #FFFFFF;
+        vertical-align: baseline;
     }
     .input input{
         background-color: transparent;
         border: none;
         color: #FFFFFF;
+        height: 2rem;
     }
     .submitBtn{
         background-image: url("../../images/assets/btn/submit.png");
