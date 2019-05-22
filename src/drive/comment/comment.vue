@@ -15,7 +15,7 @@
             <input
                     class="msgInput"
                     type="text"
-                    v-model="chat.msg"
+                    v-model="chatList.msg"
                     maxlength="20"
             >
             <button class="sendBtn">发送</button>
@@ -77,7 +77,7 @@
                     }
 
                 ],
-                chat:{
+                chatList:{
                     headImgUrl:'',
                     nickName:'',
                     msg:''
@@ -123,20 +123,20 @@
             },
             addNewMsg(){
                 console.log('hcj')
-                console.log(this.chat)
+                console.log(this.chatList)
                 const that = this
-                if(this.chat.nickName){
-                    if(this.chat.msg){
-                        this.postChat(that.chat)
+                if(this.chatList.nickName){
+                    if(this.chatList.msg){
+                        this.postChat(that.chatList)
                         this.msgs.push({
                             id:this.nextMsgId++,
                             text:this.chat.msg
                         })
-                        this.chat.msg = '';
+                        this.chatList.msg = '';
                         this.btnShow = true
                     }
                 }else {
-                    this.getMsgTap()
+                    // this.getMsgTap()
                 }
 
             },

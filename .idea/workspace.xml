@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="270200d2-59d7-4930-a395-793fc1351d23" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/drive/comment/comment.vue" afterPath="$PROJECT_DIR$/src/drive/comment/comment.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -97,10 +98,10 @@
       <file leaf-file-name="comment.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/drive/comment/comment.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
+            <state relative-caret-position="360">
               <caret line="139" column="17" lean-forward="true" selection-start-line="139" selection-start-column="17" selection-end-line="139" selection-end-column="17" />
               <folding>
-                <element signature="e#1268#1312#0" expanded="true" />
+                <element signature="e#1272#1316#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -414,12 +415,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558278843730</updated>
-      <workItem from="1558278845662" duration="52424000" />
+      <workItem from="1558278845662" duration="52849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52424000" />
+    <option name="totallyTimeSpent" value="52849000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -817,10 +818,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/drive/comment/comment.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
+        <state relative-caret-position="360">
           <caret line="139" column="17" lean-forward="true" selection-start-line="139" selection-start-column="17" selection-end-line="139" selection-end-column="17" />
           <folding>
-            <element signature="e#1268#1312#0" expanded="true" />
+            <element signature="e#1272#1316#0" expanded="true" />
           </folding>
         </state>
       </provider>
