@@ -136,7 +136,7 @@
                         this.btnShow = true
                     }
                 }else {
-                    // this.getMsgTap()
+                    this.getMsgTap()
                 }
 
             },
