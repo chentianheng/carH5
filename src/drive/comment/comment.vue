@@ -100,10 +100,10 @@
             }
             this.getChat()
             if(localStorage.getItem('nickName')){
-                this.chat.nickName = localStorage.getItem('nickName');
+                this.chatList.nickName = localStorage.getItem('nickName');
             }
             if(localStorage.getItem('headImgUrl')){
-                this.chat.headImgUrl = localStorage.getItem('headImgUrl');
+                this.chatList.headImgUrl = localStorage.getItem('headImgUrl');
             }
         },
         methods:{
@@ -142,7 +142,7 @@
             },
             getMsgTap(){
                 var url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' + 'wx3450d66aef061ce2' + '&redirect_uri=' +
-                    encodeURIComponent('http://h5share.yf-gz.cn/h5/index.html#/comment') + '&response_type=' +
+                        encodeURIComponent('http://h5share.yf-gz.cn/h5/index.html#/comment') + '&response_type=' +
                     'code' + '&scope=' + 'snsapi_userinfo' + '&state=' + 123 + '#wechat_redirect'
                 window.location.href = url
             },
@@ -152,13 +152,13 @@
                     let list = res.data.data || null;
                     console.log(list)
                     that.userMsg = list
-                    that.$router.push({ path:'/choice' })
                     if(list){
                         localStorage.setItem('nickName',list.nickName);
                     }
                     if(list){
                         localStorage.setItem('headImgUrl',list.headImgUrl);
                     }
+                    that.$router.push({ path:'/comment' })
                 });
             },
             playGame(){
