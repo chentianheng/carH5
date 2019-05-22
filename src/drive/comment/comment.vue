@@ -123,15 +123,18 @@
             },
             addNewMsg(){
                 console.log('hcj')
+                console.log(this.chat)
                 const that = this
                 if(this.chat.nickName){
-                    this.postChat(that.chat)
-                    this.msgs.push({
-                        id:this.nextMsgId++,
-                        text:this.chat.msg
-                    })
-                    this.chat.msg = '';
-                    this.btnShow = true
+                    if(this.chat.msg){
+                        this.postChat(that.chat)
+                        this.msgs.push({
+                            id:this.nextMsgId++,
+                            text:this.chat.msg
+                        })
+                        this.chat.msg = '';
+                        this.btnShow = true
+                    }
                 }else {
                     this.getMsgTap()
                 }
