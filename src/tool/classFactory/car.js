@@ -37,7 +37,34 @@ export default class Car {
             err => Promise.reject(err)
         );
     }
-
+    postChat(data) {
+        return Axios({
+            url: `/api/chat `,
+            method: 'post',
+            data: data
+        }).then(
+            res => {
+                res.data.data = res.data.data || [];
+                let list = res.data.data;
+                return Promise.resolve(res);
+            },
+            err => Promise.reject(err)
+        );
+    }
+    getChat(data) {
+        return Axios({
+            url: `/api/chat `,
+            method: 'get',
+            data: data
+        }).then(
+            res => {
+                res.data.data = res.data.data || [];
+                let list = res.data.data;
+                return Promise.resolve(res);
+            },
+            err => Promise.reject(err)
+        );
+    }
     postMember(data) {
         return Axios({
             url: `/api/member`,

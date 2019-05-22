@@ -93,6 +93,35 @@ export const appRouter = [
         component: resolve => {
             require(['./drive/secondary/secondary'], resolve);
         }
+    },
+    {
+        path: '/comment',
+        meta: {
+            title: '评论',
+            keepAlive: false
+        },
+        component: resolve => {
+            require(['./drive/comment/comment'], resolve);
+        }
+    },
+    {
+        path: '/activity',
+        meta: {
+            title: '评论',
+            keepAlive: false
+        },
+        component: resolve => {
+            require(['./drive/activity/activity'], resolve);
+        }
+    },
+    {
+        path: '/activitychoice',
+        meta: {
+            title: '评论',
+            keepAlive: false
+        },
+        component: resolve => {
+            require(['./drive/activitychoice/activitychoice'], resolve);
+        }
     }
-
 ]
