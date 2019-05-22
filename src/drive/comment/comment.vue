@@ -114,7 +114,7 @@
                     console.log(list)
                 });
             },
-            postChat(){
+            postChat(data){
                 const that = this;
                 Drive.prototype.postChat(data).then(res => {
                     let list = res.data.data || [];
