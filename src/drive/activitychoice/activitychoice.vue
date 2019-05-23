@@ -3,7 +3,7 @@
         <!--<img class="title" src="../../images/assets/choice/标题.png" alt="title"/>-->
         <img @click="hrefFashion" class="btn1" src="../../images/assets/activity/exhibitionBtn.png" alt="btn1"/>
         <img  class="btn2" src="../../images/assets/activity/activityLine.png" alt="btn2"/>
-        <a href="http://www.yf-gz.cn"><img  class="btn3" src="../../images/assets/activity/viewPointBtn.png" alt="btn3"/></a>
+        <a href="https://live.photoplus.cn/activity/live/6951456?uniqCode=a48RPgE3Xu&accessFrom=qrcode&from=groupmessage&isappinstalled=0"><img  class="btn3" src="../../images/assets/activity/viewPointBtn.png" alt="btn3"/></a>
 
         <img class="footer" src="../../images/assets/home/main_06.png" height="50" width="50"/>
     </div>
