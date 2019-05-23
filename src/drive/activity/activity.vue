@@ -188,7 +188,7 @@
                     let list = res.data.data || null;
                     console.log(list)
                     that.userMsg = list
-                    that.$router.push({ path:'/choice' })
+                    that.$router.push({ path:'/activity' })
                     if(list){
                         localStorage.setItem('nickName',list.nickName);
                     }
