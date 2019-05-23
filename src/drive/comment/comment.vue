@@ -1,14 +1,14 @@
 <template>
     <div class="container">
     <div class="commentRoom">
-        <ul class="msgBox">
+        <div class="msgBox" style="width: 100%;">
             <li
                     is="msgBox"
                     v-for="(msg,index) in msgs"
                     :key="msg.id"
-                    :text="msg.text"
+                    :data="msg"
             ></li>
-        </ul>
+        </div>
     </div>
     <div class="msgContainer">
         <form v-on:submit.prevent="addNewMsg">
@@ -67,15 +67,6 @@
                 resultShow:false,
                 newMsgText :'',
                 msgs:[
-                    {
-                        id:1,
-                        text:'手动比心~'
-                    },
-                    {
-                        id:2,
-                        text:'哇塞，真的好棒哟'
-                    }
-
                 ],
                 chatList:{
                     headImgUrl:'',
@@ -112,6 +103,16 @@
                 Drive.prototype.getChat().then(res => {
                     let list = res.data.data || [];
                     console.log(list)
+                    for(var idx in list){
+                        if(list[idx].msg){
+                            that.msgs.push({
+                                headImgUrl: list[idx].headImgUrl,
+                                nickName: list[idx].nickName,
+                                msg:list[idx].msg
+                            })
+                        }
+                    }
+                    console.log(that.msgs)
                 });
             },
             postChat(data){
@@ -119,6 +120,13 @@
                 Drive.prototype.postChat(data).then(res => {
                     let list = res.data.data || [];
                     console.log(list)
+                    that.msgs.push({
+                        headImgUrl: list.headImgUrl,
+                        nickName: list.nickName,
+                        msg:list.msg
+                    })
+                    that.chatList.msg = '';
+                    that.btnShow = true
                 });
             },
             addNewMsg(){
@@ -128,12 +136,6 @@
                 if(this.chatList.nickName){
                     if(this.chatList.msg){
                         this.postChat(that.chatList)
-                        this.msgs.push({
-                            id:this.nextMsgId++,
-                            text:this.chat.msg
-                        })
-                        this.chatList.msg = '';
-                        this.btnShow = true
                     }
                 }else {
                     this.getMsgTap()
@@ -188,7 +190,7 @@
         justify-content: center;
         margin-top: 7rem;
         background-color: rgba(242,242,242,0.2);
-        width: 16rem;
+        width: 19rem;
         height: 22rem;
         overflow-y: auto;
         overflow-x: hidden;
@@ -268,4 +270,5 @@
         color: #ffffff;
         margin-top: 5rem;
     }
+
 </style>
