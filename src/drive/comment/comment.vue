@@ -11,14 +11,14 @@
         </div>
     </div>
     <div class="msgContainer">
-        <form v-on:submit.prevent="addNewMsg">
+        <form v-on:submit.prevent="addNewMsg" style=" width: 100%;position: relative;">
             <input
                     class="msgInput"
                     type="text"
                     v-model="chatList.msg"
                     maxlength="20"
             >
-            <button class="sendBtn">发送</button>
+            <button class="sendBtn" style="    position: absolute;right: 10px;margin-top: 3px;">发送</button>
         </form>
     </div>
         <img class="footer" src="../../images/assets/home/main_06.png" height="50" width="50"/>
