@@ -29,11 +29,12 @@
         </div>
 
         <!--   弹出抽奖结果-->
-        <div class="thxContainer" v-show="resultShow">
+        <div class="thxContainer" v-show="resultShow" @click="resultTap">
             <img src="../../images/assets/activity/gift.png" alt="" width="150">
             <p class="resultMsg">{{ message }}</p>
             <p class="resultFooter">*请截图保存抽奖结果</p>
         </div>
+
     </div>
 
 
@@ -164,10 +165,14 @@
                 });
             },
             playGame(){
+
                 this.btnShow = false;
                 this.resultShow = true;
                 let i = Math.floor(Math.random()*4);
                 this.message = this.messages[i]
+            },
+            resultTap(){
+                this.resultShow = !this.resultShow
             }
         }
     }
@@ -270,5 +275,17 @@
         color: #ffffff;
         margin-top: 5rem;
     }
-
+    /* 旋转效果 */
+    .demo-spin-icon-load{
+        animation: ani-demo-spin 1s linear infinite;
+    }
+    @keyframes ani-demo-spin {
+        from { transform: rotate(0deg);}
+        50% { transform: rotate(180deg);}
+        to { transform: rotate(360deg);}
+    }
+    /* 假如内容过长，一屏放不下，滚动条下拉覆盖不全 */
+    .ivu-spin-fix {
+        position: fixed;
+    }
 </style>
