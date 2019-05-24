@@ -6,7 +6,7 @@
             <p class="pTitle">全新XC40 & MAO LiveHouse</p>
             <p class="pTitle">‘范西客’的自由之路上市音乐派对</p>
             <img class="titleImg" src="../../images/assets/activity/activityTitle.png" alt="titleImg"/>
-            <img @click="hrefChoice" class="imgFooter" src="../../images/assets/home/footer.png" alt="">
+            <img @click="hrefChoice" class="imgFooter" src="../../images/assets/activity/footer.png" alt="">
         </div>
         <toast v-model="showPositionValue" type="text" :time="800" is-show-mask :text="msg" :position="middle">{{msg}}</toast>
     </div>
@@ -297,7 +297,7 @@
     .imgFooter {
         width: 70%;
         position: absolute;
-        bottom: 25px;
+        bottom: 28px;
     }
     .pTitle {
         color: #ffffff;

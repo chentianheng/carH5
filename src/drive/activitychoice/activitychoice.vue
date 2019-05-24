@@ -115,11 +115,10 @@
         width: 15rem;
     }
     .btn2{
-        margin-top: 1rem;
         height: 5rem;
     }
     .btn3{
-        margin-top: 1rem;
+
         width: 15rem;
     }
     .footer{
