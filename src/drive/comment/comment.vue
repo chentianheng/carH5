@@ -35,6 +35,14 @@
             <p class="resultFooter">*请截图保存抽奖结果</p>
         </div>
 
+        <!--弹出关闭确定框-->
+        <div class="tipsContainer" v-show="tipsShow">
+            <p class="tipsContent">请截图获奖页，关闭后将无法再次抽奖，您确定关闭吗？</p>
+            <div class="btnContainer">
+                <button class="tipsBtn" @click="tipsBtnClose">我已截图，确认关闭</button>
+                <button class="tipsBtn" @click="tipsBtnBack">返回</button>
+            </div>
+        </div>
     </div>
 
 
@@ -67,6 +75,7 @@
                 btnShow:false,
                 resultShow:false,
                 newMsgText :'',
+                tipsShow:true,
                 msgs:[
                 ],
                 chatList:{
@@ -172,7 +181,14 @@
                 this.message = this.messages[i]
             },
             resultTap(){
-                this.resultShow = !this.resultShow
+                this.tipsShow = !this.tipsShow
+            },
+            tipsBtnClose(){
+                this.tipsShow = !this.tipsShow;
+                this.resultShow = !this.resultShow;
+            },
+            tipsBtnBack(){
+                this.tipsShow = !this.tipsShow;
             }
         }
     }
@@ -287,5 +303,36 @@
     /* 假如内容过长，一屏放不下，滚动条下拉覆盖不全 */
     .ivu-spin-fix {
         position: fixed;
+    }
+
+    .tipsContainer{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(0,0,0,0.8);
+        top: 10rem;
+        width: 20rem;
+        height: 10rem;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        padding: 0 3rem;
+    }
+
+    .btnContainer{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        width: 15rem;
+    }
+
+    .tipsBtn{
+        border-style: none;
+        border-radius: 4px;
+        color: white;
+        font-size: 14px;
+        background-color: rgba(254,63,144,0.8);
+        width: auto;
+        padding: 0.5rem 1rem;
     }
 </style>
